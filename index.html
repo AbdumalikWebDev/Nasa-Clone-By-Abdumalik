@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>NASA | Abdumalik</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/versions.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-left">
+          <button type="button" id="exploreButton">
+            Explore <i class="fa-solid fa-circle-chevron-down"></i>
+          </button>
+          <div class="offcanvas" id="offcanvas">NICE</div>
+          <input type="search" placeholder="Search..." />
+        </div>
+        <div class="nav-center">
+          <a href="index.html">
+            <img
+              src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg"
+              alt="NASA logo nasa-logo"
+            />
+          </a>
+        </div>
+        <div class="nav-right">
+          <div class="news-dropdown dropdown">
+            <button onclick="toggleDropdown('dropdown1')" class="dropdown-btn">
+              News & Events
+              <i id="arrow-icon1" class="fas fa-chevron-down arrow-icon"></i>
+            </button>
+            <ul
+              class="news-dropdown__content dropdown-content"
+              id="dropdown-content1"
+            >
+              <li>
+                <a href="#"
+                  >News & Events <i class="fa-solid fa-circle-arrow-right"></i
+                ></a>
+              </li>
+              <li><a href="#">All NASA News</a></li>
+              <li><a href="#">Video Series on NASA+</a></li>
+              <li><a href="#">Podcasts</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Newsletters</a></li>
+              <li><a href="#">Social Media</a></li>
+              <li><a href="#">Media Resources</a></li>
+              <li>
+                <a href="#"
+                  >Upcoming Launches &<br />
+                  Landings</a
+                >
+              </li>
+              <li><a href="#">Virtual Events</a></li>
+            </ul>
+          </div>
+          <div class="multimedia-dropdown dropdown">
+            <button onclick="toggleDropdown('dropdown2')" class="dropdown-btn">
+              Multimedia
+              <i id="arrow-icon2" class="fas fa-chevron-down arrow-icon"></i>
+            </button>
+            <ul
+              class="multimedia-dropdown__content dropdown-content"
+              id="dropdown-content2"
+            >
+              <li>
+                <a href="#"
+                  >Multimedia
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </a>
+              </li>
+              <li><a href="#">NASA+</a></li>
+              <li><a href="#">Images</a></li>
+              <li><a href="#">NASA TV</a></li>
+              <li><a href="#">Sounds And Ringtones</a></li>
+              <li><a href="#">Interactives</a></li>
+              <li><a href="#">NASA Apps</a></li>
+              <li><a href="#">Podcasts</a></li>
+              <li><a href="#">e-Books</a></li>
+              <li><a href="#">STEM Multimedia</a></li>
+            </ul>
+          </div>
+          <a href="#">
+            <h6 class="badge-text">
+              NASA+
+              <div class="live-badge">Live</div>
+            </h6>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="delivering-section">
+      <div class="delivering-section-wrapper">
+        <div class="delivering-section-container">
+          <div class="delivering-section__top">
+            <h1 class="scrollFade">Journey to the Moon</h1>
+            <p class="scrollFade">
+              As part of NASA's Commercial Lunar Payload Services (CLPS)
+              initiative, SpaceX is targeting no earlier than Wednesday, Feb.
+              14, for the launch of Intuitive Machines' first lunar lander to
+              the Moon's surface.
+            </p>
+            <button type="button" class="btn btn-danger">Learn More</button>
+          </div>
+          <div class="delivering-section__bottom">
+            <div class="ds__bottom-col1">
+              <p class="wide-paragraph">IM - I MISSION</p>
+              <a href="#">
+                <h5>
+                  Launch Coverage <i class="fa-solid fa-circle-arrow-right"></i>
+                </h5>
+              </a>
+            </div>
+            <div class="ds__bottom-col2">
+              <p class="wide-paragraph">FUTURE - MISSION</p>
+              <a href="#">
+                <h5>
+                  NASA'S VIPER <i class="fa-solid fa-circle-arrow-right"></i>
+                </h5>
+              </a>
+            </div>
+            <div class="ds__bottom-col3">
+              <p class="wide-paragraph">A LUNAR ECONOMY</p>
+              <a href="#">
+                <h5>
+                  What is CLPS? <i class="fa-solid fa-circle-arrow-right"></i>
+                </h5>
+              </a>
+            </div>
+            <!-- <div class="ds__bottom-col4"></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-news">
+      <div class="featured-news-container">
+        <div class="news-text">
+          <h2 class="scrollFade">Featured News</h2>
+          <a href="#">
+            <h6 class="scrollFade">
+              More NASA News <i class="fa-solid fa-circle-arrow-right"></i>
+            </h6>
+          </a>
+        </div>
+        <div class="news-images">
+          <a href="#" class="news-img1 news-img">
+            <div class="img-wrapper">
+              <p class="article-bookmark">
+                <i class="fa-regular fa-bookmark"></i> Article
+              </p>
+              <div class="news-img__name">
+                <p>3 MIN READ</p>
+                <h6>
+                  NASA Expedition 71 Astronauts to Conduct Research aboard Space
+                  Station
+                </h6>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="news-img2 news-img">
+            <div class="img-wrapper">
+              <p class="article-bookmark">
+                <i class="fa-regular fa-bookmark"></i> Article
+              </p>
+              <div class="news-img__name">
+                <p>2 MIN READ</p>
+                <h6>Hubble Spots a Galaxy Shrouded by Stars</h6>
+              </div>
+            </div>
+          </a>
+          <div class="news-img3-4">
+            <a href="#" class="news-img3 news-img">
+              <div class="img-wrapper">
+                <p class="article-bookmark">
+                  <i class="fa-regular fa-bookmark"></i> Article
+                </p>
+                <div class="news-img__name3">
+                  <p>3 MIN READ</p>
+                  <h6>
+                    Third NASA Enabled Private Flight to Space Station Completes
+                    Safely
+                  </h6>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="news-img4 news-img">
+              <div class="img-wrapper">
+                <p class="article-bookmark">
+                  <i class="fa-regular fa-bookmark"></i> Article
+                </p>
+                <div class="news-img__name4">
+                  <p>5 MIN READ</p>
+                  <h6>
+                    NASA's New Experimental Antenna Tracks Deep Space Laser
+                  </h6>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="articles">
+          <a href="#" class="article article1">
+            <img
+              src="https://images-assets.nasa.gov/image/AFRC2024-0010-66/AFRC2024-0010-66~large.jpg?w=1200&h=800&fit=crop&crop=faces%2Cfocalpoint"
+              alt=""
+            />
+            <div class="article-name">
+              <p>3 MIN READ</p>
+              <h6 class="card-p">
+                NASA Collaborates in an International Air Quality Study
+              </h6>
+              <p class="articles-bookmark">
+                <i class="fa-regular fa-bookmark"></i> Article
+              </p>
+            </div>
+          </a>
+          <a href="#" class="article article2">
+            <img
+              src="https://www.nasa.gov/wp-content/uploads/2024/02/1-glinting-sea-ice.jpg.jpg?resize=150,150"
+              alt=""
+            />
+            <div class="article-name">
+              <p>5 MIN READ</p>
+              <h6 class="card-p">
+                Meet NASA's Twin Spacecraft Headed to the Ends of the Earth
+              </h6>
+              <p class="articles-bookmark">
+                <i class="fa-regular fa-bookmark"></i> Article
+              </p>
+            </div>
+          </a>
+          <a href="#" class="article article3">
+            <img
+              src="https://science.nasa.gov/wp-content/uploads/2024/02/grasshopper-eclipse-soundscapes.jpeg"
+              alt=""
+            />
+            <div class="article-name">
+              <p>5 MIN READ</p>
+              <h6 class="card-p">
+                Sense the Solar Eclipse with NASA's Eclipse Soundscapes Project
+              </h6>
+              <p class="articles-bookmark">
+                <i class="fa-regular fa-bookmark"></i> Article
+              </p>
+            </div>
+          </a>
+          <a href="#" class="article article4">
+            <img
+              src="https://www.nasa.gov/wp-content/uploads/2024/02/cosmic-brain-organoid-cells-cortical.png?resize=768,768"
+              alt=""
+            />
+            <div class="article-name">
+              <p>3 MIN READ</p>
+              <h6 class="card-p">
+                NASA Expedition 71 Astronauts to Conduct Research aboard Space
+                Station
+              </h6>
+              <p class="articles-bookmark">
+                <i class="fa-regular fa-bookmark"></i> Article
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <article class="vh-3">
+      <div class="vh-3__wrapper">
+        <div class="vh-3-container">
+          <h5 class="scrollFade">
+            Engage and <br />
+            Inspire
+          </h5>
+          <p class="scrollFade">
+            NASA's Mission Equity is a comprehensive effort to assess the
+            expansion and modification of agency programs, procurements, grants,
+            and policies and examine the potential barriers that exist for
+            historically underrepresented and underserved communities.
+          </p>
+          <a href="#" target="_self" class="scrollFade">
+            Read the 2024 Equity Action Plan
+            <i class="fa-solid fa-circle-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </article>
+    <article class="vh-4">
+      <div class="vh-4-container">
+        <div class="vh-4__left">
+          <p>TODAY</p>
+          <h4 class="scrollFade">Image Of The Day</h4>
+          <h5 class="scrollFade">A Floridian Sunset</h5>
+          <p class="paragraph scrollFade">
+            Photographers at NASA capture the sunset on Tuesday, Jan. 30, 2024,
+            near the Vehicle Assembly Building at the agency's Kennedy Space
+            Center in Florida. The iconic Vehicle Assembly Building, completed
+            in 1966 and currently used for assembly of NASA's Space Launch
+            System rocket for Artemis missions, remains the only building in
+            which rockets were assembled that carried humans to the surface of
+            another world.
+          </p>
+          <a href="" target="_self">
+            Browse Image Archive
+            <i class="fa-solid fa-circle-arrow-right"></i
+          ></a>
+        </div>
+        <div class="vh-4__right">
+          <img
+            src="./images/imageoftheDay.webp"
+            class="vh-4-background"
+            alt=""
+          />
+          <a href="#"
+            ><img src="./icons/download.svg" class="download-btn" alt=""
+          /></a>
+          <h6>View image <i class="fa-solid fa-circle-arrow-right"></i></h6>
+        </div>
+      </div>
+    </article>
+    <aside class="vh-5">
+      <div class="vh-5__wrapper">
+        <div class="vh-5-container">
+          <h3>Our Changing Planet</h3>
+          <p>
+            For more than 50 years, NASA satellites have provided data on
+            Earth's land, water, air, temperature, and climate. NASA's Earth
+            Information Center allows visitors to see how our planet is changing
+            in six key areas: sea level rise and coastal impacts, health and air
+            quality, wildfires, greenhouse gases, sustainable energy, and
+            agriculture.
+          </p>
+          <a href="#" target="_self"
+            >Start Exploring<i class="fa-solid fa-circle-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <aside class="vh-6 b-cover">
+      <div class="vh-6-container">
+        <div class="latest-news-text">
+          <p class="scrollFade">Latest News</p>
+          <a href="#" target="_self">
+            <h6 class="scrollFade">
+              More NASA News Releases
+              <i class="fa-solid fa-circle-arrow-right"></i>
+            </h6>
+          </a>
+        </div>
+        <div class="vh-6-top">
+          <a href="#" class="vh-6_img1 vh-6_img">
+            <div class="img-wrapper">
+              <p class="news-release">
+                <svg
+                  class="square-2 margin-right-1"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 16 16"
+                  style="enable-background: new 0 0 16 16"
+                  xml:space="preserve"
+                  fill="#fff"
+                >
+                  <g>
+                    <path
+                      d="M8,0c4.4,0,7.9,3.5,8,7.9c0.1,4.5-3.5,8.1-7.9,8.1c-4.5,0-8-3.6-8.1-7.9C-0.1,3.6,3.6,0,8,0z M0.8,8 c0,4,3.2,7.2,7.2,7.2c4,0,7.2-3.2,7.2-7.2c0-4-3.3-7.2-7.2-7.2C4,0.8,0.8,4,0.8,8z"
+                    ></path>
+                    <path
+                      d="M11.2,4c0,2.7,0,5.3,0,8c-2.1,0-4.3,0-6.4,0c0,0,0,0,0-0.1c0-1.8,0-3.6,0-5.4c0-0.8,0-1.6,0-2.4 C4.8,4,4.8,4,4.9,4C6.2,4,7.6,4,9,4C9.7,4,10.4,4,11.2,4C11.1,4,11.2,4,11.2,4z M9.6,5.6c-1.1,0-2.1,0-3.2,0c0,0,0,0,0,0.1 c0,0.5,0,1,0,1.5c0,0.1,0,0.1,0.1,0.1c1,0,2,0,3.1,0c0,0,0.1,0,0.1-0.1C9.6,6.6,9.6,6.2,9.6,5.6C9.6,5.6,9.6,5.6,9.6,5.6z M6.4,8.8C6.4,8.8,6.4,8.8,6.4,8.8c1.1,0,2.1,0,3.1,0c0.1,0,0.1,0,0.1-0.1c0-0.2,0-0.4,0-0.7c0,0,0,0,0-0.1C8.5,8,7.5,8,6.4,8 C6.4,8.3,6.4,8.5,6.4,8.8z M8.8,10.4C8.8,10.4,8.8,10.4,8.8,10.4c0-0.3,0-0.5,0-0.7c0-0.1,0-0.1-0.1-0.1c-0.5,0-1,0-1.5,0 c-0.3,0-0.5,0-0.8,0c0,0,0,0-0.1,0c0,0.3,0,0.5,0,0.8C7.2,10.4,8,10.4,8.8,10.4z"
+                    ></path>
+                  </g>
+                </svg>
+                NEWS RELEASE
+              </p>
+              <div class="vh-6_img-bottom">
+                <p class="wide-paragraph">3 MIN READ</p>
+                <p class="bolder">
+                  NASA's SpaceX Crew-7 Return to Earth to Air Live on NASA
+                  Platforms
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="vh-6_img2 vh-6_img">
+            <div class="img-wrapper">
+              <p class="news-release">
+                <svg
+                  class="square-2 margin-right-1"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 16 16"
+                  style="enable-background: new 0 0 16 16"
+                  xml:space="preserve"
+                  fill="#fff"
+                >
+                  <g>
+                    <path
+                      d="M8,0c4.4,0,7.9,3.5,8,7.9c0.1,4.5-3.5,8.1-7.9,8.1c-4.5,0-8-3.6-8.1-7.9C-0.1,3.6,3.6,0,8,0z M0.8,8 c0,4,3.2,7.2,7.2,7.2c4,0,7.2-3.2,7.2-7.2c0-4-3.3-7.2-7.2-7.2C4,0.8,0.8,4,0.8,8z"
+                    ></path>
+                    <path
+                      d="M11.2,4c0,2.7,0,5.3,0,8c-2.1,0-4.3,0-6.4,0c0,0,0,0,0-0.1c0-1.8,0-3.6,0-5.4c0-0.8,0-1.6,0-2.4 C4.8,4,4.8,4,4.9,4C6.2,4,7.6,4,9,4C9.7,4,10.4,4,11.2,4C11.1,4,11.2,4,11.2,4z M9.6,5.6c-1.1,0-2.1,0-3.2,0c0,0,0,0,0,0.1 c0,0.5,0,1,0,1.5c0,0.1,0,0.1,0.1,0.1c1,0,2,0,3.1,0c0,0,0.1,0,0.1-0.1C9.6,6.6,9.6,6.2,9.6,5.6C9.6,5.6,9.6,5.6,9.6,5.6z M6.4,8.8C6.4,8.8,6.4,8.8,6.4,8.8c1.1,0,2.1,0,3.1,0c0.1,0,0.1,0,0.1-0.1c0-0.2,0-0.4,0-0.7c0,0,0,0,0-0.1C8.5,8,7.5,8,6.4,8 C6.4,8.3,6.4,8.5,6.4,8.8z M8.8,10.4C8.8,10.4,8.8,10.4,8.8,10.4c0-0.3,0-0.5,0-0.7c0-0.1,0-0.1-0.1-0.1c-0.5,0-1,0-1.5,0 c-0.3,0-0.5,0-0.8,0c0,0,0,0-0.1,0c0,0.3,0,0.5,0,0.8C7.2,10.4,8,10.4,8.8,10.4z"
+                    ></path>
+                  </g>
+                </svg>
+                NEWS RELEASE
+              </p>
+              <div class="vh-6_img-bottom">
+                <p class="wide-paragraph">4 MIN READ</p>
+                <p class="bolder">
+                  NASA to Host Boeing Crew Flight Test Preview, News Conferences
+                </p>
+              </div>
+            </div>
+          </a>
+          <div class="vh-6-img-3-4">
+            <a href="#" class="vh-6_img3 vh-6_img">
+              <div class="img-wrapper">
+                <p class="news-release">
+                  <svg
+                    class="square-2 margin-right-1"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 16 16"
+                    style="enable-background: new 0 0 16 16"
+                    xml:space="preserve"
+                    fill="#fff"
+                  >
+                    <g>
+                      <path
+                        d="M8,0c4.4,0,7.9,3.5,8,7.9c0.1,4.5-3.5,8.1-7.9,8.1c-4.5,0-8-3.6-8.1-7.9C-0.1,3.6,3.6,0,8,0z M0.8,8 c0,4,3.2,7.2,7.2,7.2c4,0,7.2-3.2,7.2-7.2c0-4-3.3-7.2-7.2-7.2C4,0.8,0.8,4,0.8,8z"
+                      ></path>
+                      <path
+                        d="M11.2,4c0,2.7,0,5.3,0,8c-2.1,0-4.3,0-6.4,0c0,0,0,0,0-0.1c0-1.8,0-3.6,0-5.4c0-0.8,0-1.6,0-2.4 C4.8,4,4.8,4,4.9,4C6.2,4,7.6,4,9,4C9.7,4,10.4,4,11.2,4C11.1,4,11.2,4,11.2,4z M9.6,5.6c-1.1,0-2.1,0-3.2,0c0,0,0,0,0,0.1 c0,0.5,0,1,0,1.5c0,0.1,0,0.1,0.1,0.1c1,0,2,0,3.1,0c0,0,0.1,0,0.1-0.1C9.6,6.6,9.6,6.2,9.6,5.6C9.6,5.6,9.6,5.6,9.6,5.6z M6.4,8.8C6.4,8.8,6.4,8.8,6.4,8.8c1.1,0,2.1,0,3.1,0c0.1,0,0.1,0,0.1-0.1c0-0.2,0-0.4,0-0.7c0,0,0,0,0-0.1C8.5,8,7.5,8,6.4,8 C6.4,8.3,6.4,8.5,6.4,8.8z M8.8,10.4C8.8,10.4,8.8,10.4,8.8,10.4c0-0.3,0-0.5,0-0.7c0-0.1,0-0.1-0.1-0.1c-0.5,0-1,0-1.5,0 c-0.3,0-0.5,0-0.8,0c0,0,0,0-0.1,0c0,0.3,0,0.5,0,0.8C7.2,10.4,8,10.4,8.8,10.4z"
+                      ></path>
+                    </g>
+                  </svg>
+                  NEWS RELEASE
+                </p>
+                <div class="vh-6_img-bottom">
+                  <p class="wide-paragraph">2 MIN READ</p>
+                  <p class="bolder">
+                    NASA to Highlight Artemis, US Space Leadership During Annual
+                    Address
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="vh-6_img4 vh-6_img">
+              <div class="img-wrapper">
+                <p class="news-release">
+                  <svg
+                    class="square-2 margin-right-1"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 16 16"
+                    style="enable-background: new 0 0 16 16"
+                    xml:space="preserve"
+                    fill="#fff"
+                  >
+                    <g>
+                      <path
+                        d="M8,0c4.4,0,7.9,3.5,8,7.9c0.1,4.5-3.5,8.1-7.9,8.1c-4.5,0-8-3.6-8.1-7.9C-0.1,3.6,3.6,0,8,0z M0.8,8 c0,4,3.2,7.2,7.2,7.2c4,0,7.2-3.2,7.2-7.2c0-4-3.3-7.2-7.2-7.2C4,0.8,0.8,4,0.8,8z"
+                      ></path>
+                      <path
+                        d="M11.2,4c0,2.7,0,5.3,0,8c-2.1,0-4.3,0-6.4,0c0,0,0,0,0-0.1c0-1.8,0-3.6,0-5.4c0-0.8,0-1.6,0-2.4 C4.8,4,4.8,4,4.9,4C6.2,4,7.6,4,9,4C9.7,4,10.4,4,11.2,4C11.1,4,11.2,4,11.2,4z M9.6,5.6c-1.1,0-2.1,0-3.2,0c0,0,0,0,0,0.1 c0,0.5,0,1,0,1.5c0,0.1,0,0.1,0.1,0.1c1,0,2,0,3.1,0c0,0,0.1,0,0.1-0.1C9.6,6.6,9.6,6.2,9.6,5.6C9.6,5.6,9.6,5.6,9.6,5.6z M6.4,8.8C6.4,8.8,6.4,8.8,6.4,8.8c1.1,0,2.1,0,3.1,0c0.1,0,0.1,0,0.1-0.1c0-0.2,0-0.4,0-0.7c0,0,0,0,0-0.1C8.5,8,7.5,8,6.4,8 C6.4,8.3,6.4,8.5,6.4,8.8z M8.8,10.4C8.8,10.4,8.8,10.4,8.8,10.4c0-0.3,0-0.5,0-0.7c0-0.1,0-0.1-0.1-0.1c-0.5,0-1,0-1.5,0 c-0.3,0-0.5,0-0.8,0c0,0,0,0-0.1,0c0,0.3,0,0.5,0,0.8C7.2,10.4,8,10.4,8.8,10.4z"
+                      ></path>
+                    </g>
+                  </svg>
+                  NEWS RELEASE
+                </p>
+                <div class="vh-6_img-bottom">
+                  <p class="wide-paragraph">2 MIN READ</p>
+                  <p class="bolder">
+                    NASA Sets Science Webinar Coverage for Space Station
+                    Resupply Mission
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="vh-6-bottom my-3">
+          <a href="#" class="vh-6-bottom_img1 vh-6-bottom_img">
+            <img
+              src="https://www.nasa.gov/wp-content/uploads/2024/03/loral-ohara-for-advisory.jpg?resize=150,150"
+              alt=""
+            />
+            <div class="vh-6-bottom_img-text">
+              <p class="wide-paragraph">2 MIN READ</p>
+              <h6 class="card-p">
+                Texas Students to Hear from NASA Astronaut Aboard Space Station
+              </h6>
+              <p class="news-release">
+                <i class="fa-regular fa-file-lines"></i>
+                NEWS RELEASE
+              </p>
+            </div>
+          </a>
+          <a href="#" class="vh-6-bottom_img2 vh-6-bottom_img">
+            <img
+              src="https://www.nasa.gov/wp-content/uploads/2024/03/astronaut-graduation.jpg?resize=150,150"
+              alt=""
+            />
+            <div class="vh-6-bottom_img-text">
+              <p class="wide-paragraph">2 MIN READ</p>
+              <h6 class="card-p">
+                Texas Students to Hear from NASA Astronaut Aboard Space Station
+              </h6>
+              <p class="news-release">
+                <i class="fa-regular fa-file-lines"></i>
+                NEWS RELEASE
+              </p>
+            </div>
+          </a>
+          <a href="#" class="vh-6-bottom_img3 vh-6-bottom_img">
+            <img
+              src="https://www.nasa.gov/wp-content/uploads/2024/03/astronaut-graduation.jpg?resize=150,150"
+              alt=""
+            />
+            <div class="vh-6-bottom_img-text">
+              <p class="wide-paragraph">2 MIN READ</p>
+              <h6 class="card-p">
+                Texas Students to Hear from NASA Astronaut Aboard Space Station
+              </h6>
+              <p class="news-release">
+                <i class="fa-regular fa-file-lines"></i>
+                NEWS RELEASE
+              </p>
+            </div>
+          </a>
+          <a href="#" class="vh-6-bottom_img4 vh-6-bottom_img">
+            <img
+              src="https://www.nasa.gov/wp-content/uploads/2023/03/meatball-e1688775948667.png?w=150&h=150&crop=1"
+              alt=""
+            />
+            <div class="vh-6-bottom_img-text">
+              <p class="wide-paragraph">2 MIN READ</p>
+              <h6 class="card-p">
+                Texas Students to Hear from NASA Astronaut Aboard Space Station
+              </h6>
+              <p class="news-release">
+                <i class="fa-regular fa-file-lines"></i>
+                NEWS RELEASE
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <article class="vh-7">
+      <div class="vh-7-container">
+        <h6>Explore the Universe from your Inbox</h6>
+        <p>
+          Stay up-to-date on the latest news from NASA-from Earth to the Moon,
+          the Solar System and beyond.
+        </p>
+        <p>
+          We will never share your email address.
+          <a href="index.html">Privacy Policy</a>
+        </p>
+
+        <button>
+          <a href="index.html"
+            >Sign Up<i class="fa-solid fa-circle-arrow-right"></i
+          ></a>
+        </button>
+      </div>
+    </article>
+    <section class="vh-8">
+      <div class="vh-8-container">
+        <div class="vh-8-texts">
+          <p class="wide-paragraph">KEEP EXPLORING</p>
+          <h6>Discover More Topics From NASA</h6>
+        </div>
+        <div class="vh-8-cards">
+          <div class="vh-8-card1 vh-8-card">
+            <a href="#" class="img-wrapper">
+              Missions <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+          </div>
+          <div class="vh-8-card2 vh-8-card">
+            <a href="#" class="img-wrapper">
+              Humans In Space <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+          </div>
+          <div class="vh-8-card3 vh-8-card">
+            <a href="#" class="img-wrapper">
+              Women's<br />
+              History Month
+              <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+          </div>
+          <div class="vh-8-card4 vh-8-card">
+            <a href="#" class="img-wrapper">
+              Value of NASA <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-top">
+          <div class="footer-cont1">
+            <img
+              src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg"
+              alt="NASA"
+            />
+            <p><b>The National Aeronautics and Space Administration</b></p>
+            <p>
+              NASA explores the unknown in air and space, innovates for the
+              benefit of humanity, and inspires the world through discovery.
+            </p>
+            <li>
+              <a href="#">
+                <span class="link-item">About NASA's Mission</span>
+              </a>
+            </li>
+            <button>
+              <a href="#">
+                Join Us<i class="fa-solid fa-circle-arrow-right"></i>
+              </a>
+            </button>
+          </div>
+          <ul class="footer-cont2">
+            <li>
+              <a href="https://www.nasa.gov/">
+                <span class="link-item">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/news/">
+                <span class="link-item">News & Events</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/multimedia/">
+                <span class="link-item">Multimedia</span>
+              </a>
+            </li>
+            <li class="badge-text">
+              <a href="https://plus.nasa.gov/">
+                <span
+                  class="link-item"
+                  style="display: flex; align-items: center"
+                  >NASA+
+                  <div class="live-badge">Live</div>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/nasa-missions/"
+                ><span class="link-item">Missions</span></a
+              >
+            </li>
+          </ul>
+          <ul class="footer-cont3">
+            <li>
+              <a href="https://www.nasa.gov/humans-in-space/"
+                ><span class="link-item">Humans in Space</span></a
+              >
+            </li>
+            <li>
+              <a href="https://science.nasa.gov/earth/"
+                ><span class="link-item">Earth & Climate</span></a
+              >
+            </li>
+            <li>
+              <a href="https://science.nasa.gov/solar-system/"
+                ><span class="link-item">The Solar System</span></a
+              >
+            </li>
+            <li>
+              <a href="https://science.nasa.gov/universe/"
+                ><span class="link-item">The Universe</span></a
+              >
+            </li>
+            <li>
+              <a href="https://science.nasa.gov/"><span>Science</span></a>
+            </li>
+          </ul>
+          <ul class="footer-cont4">
+            <li>
+              <a href="https://www.nasa.gov/aeronautics/"
+                ><span class="link-item">Aeronautics</span></a
+              >
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/technology/">
+                <span class="link-item">Technology</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/learning-resources/">
+                <span class="link-item">Learning Resources</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/about/">
+                <span class="link-item">About NASA</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/es/">
+                <span class="link-item">NASA en Español</span>
+              </a>
+            </li>
+          </ul>
+          <div class="footer-cont5">
+            <p class="paragraph">Follow NASA</p>
+            <div class="icons">
+              <a
+                href="https://www.facebook.com/NASA"
+                target="_blank"
+                class="logo-circle"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/nasa/"
+                target="_blank"
+                class="logo-circle"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://x.com/NASA" target="_blank" class="logo-circle">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@NASA"
+                target="_blank"
+                class="logo-circle"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+            <li>
+              <a href="#"
+                ><span class="link-item">More NASA Social Accounts</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><span class="link-item">NASA Newsletters</span></a>
+            </li>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="footer-bottom-col1">
+            <li>
+              <a href="https://www.nasa.gov/sitemap/">
+                <span class="link-item">Sitemap</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/news/nasa-media-contacts/">
+                <span class="link-item">For Media</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.nasa.gov/nasa-web-privacy-policy-and-important-notices/"
+              >
+                <span class="link-item">Privacy Policy</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/foia/">
+                <span class="link-item">FOIA</span>
+              </a>
+            </li>
+          </div>
+          <div class="footer-bottom-col2">
+            <li>
+              <a href="https://www.nasa.gov/no-fear-act/">
+                <span class="link-item">No FEAR Act</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://oig.nasa.gov/" target="_blank">
+                <span class="link-item">Office of the IG</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/budgets-plans-and-reports/">
+                <span class="link-item">Budget & Annual Reports</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.nasa.gov/organizations/budget-annual-reports/agency-financial-reports/"
+              >
+                <span class="link-item">Agency Financial Reports</span>
+              </a>
+            </li>
+          </div>
+          <div class="footer-bottom-col3">
+            <li>
+              <a href="https://www.nasa.gov/contact-nasa/">
+                <span class="link-item">Contact NASA</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/accessibility/"
+                ><span class="link-item">Accessibility</span>
+              </a>
+            </li>
+          </div>
+        </div>
+        <div class="creator">Cloned by @ProstoAbdumalik . 01.04.2024</div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/fade-in.js"></script>
+  </body>
+</html>
